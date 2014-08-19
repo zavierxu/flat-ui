@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>开始使用&middot; Flat UI Free</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="css/flat-ui.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <h1 class="demo-headline">开始啦！</h1>
+    <div class="container">
+      <div class="demo-row">
+        <div class="demo-title">
+          <h3>Flat UI是什么？</h3>
+        </div>
+
+        <div class="demo-content demo-content-article">
+          <p>
+            <a href="http://designmodo.com/flat" target="_blank">Flat UI</a>
+            是<a href="http://getbootstrap.com" target="_blank">Bootstrap</a>一个漂亮的主题。
+            我们重新设计了它的很多组件使他们扁平化到每一个像素。
+          </p>
+          <p>
+            就绝大部分而言，使用起来非常简单，然而，使得一些元素和其他的东西看起来像我们想的那样，我们最终使用js插件，这
+            意味着你需要一点点努力将他们集成到你的项目里。
+          </p>
+        </div>
+      </div><!-- /.demo-row -->
+
+      <div class="demo-row">
+        <div class="demo-title">
+          <h3>How to Use It?</h3>
+        </div>
+
+        <div class="demo-content demo-content-article">
+          <p>
+            因为 Flat UI 建立在 Bootstrap 的一个 theme, 你可以使用 <a href="http://getbootstrap.com/" target="_blank">Bootstrap 3</a> 项目。
+            我们没有修改任何一行Bootstrap，你可以安全的使用Flat UI 在你正在进行的项目中
+            (除非你黑了自己 :) )
+          </p>
+          <p>
+            我们提供给你 CSS 和 <a href="http://lesscss.org/" target="_blank">Less</a>源码.
+            <br/>
+            1. 使用 CSS 非常简单只要把 <code>css/flat-ui.css</code> 拉到你的项目文件夹，然后
+            包含它到 template/html 页面:
+            <code>&lt;link href="css/flat-ui.css" rel="stylesheet"&gt;</code>
+          </p>
+          <p>
+            2. 使用 Less 如果你想 修改/拓展 Flat UI 到你的项目. 他和 Bootstrap差不多，所以
+            你不会感到不一样。
+          </p>
+          <p>
+            最简单的方法就是使用我们的
+            <a href="template.html">start-up template</a> 他已经包含了所有要用的 (包含JS 插件, 但是没有初始化. 你需要初始化你要用的部分。)
+          </p>
+        </div>
+      </div><!-- /.demo-row -->
+
+      <div class="demo-row">
+        <div class="demo-title">
+          <h3>文件结构</h3>
+        </div>
+
+        <div class="demo-content demo-content-article">
+          <p>
+            Once purchased, unzip the compressed archive to see the following structure:
+<pre class="prettyprint">
+  flat-ui/
+  <span class="muted">├──</span> bootstrap/
+  <span class="muted">├──</span> css/
+  <span class="muted">    ├──</span> demo.css
+  <span class="muted">    ├──</span> docs.css
+  <span class="muted">    └──</span> flat-ui.css
+  <span class="muted">├──</span> fonts/
+  <span class="muted">├──</span> images/
+  <span class="muted">├──</span> js/
+  <span class="muted">└──</span> less/
+  <span class="muted">    ├──</span> demo.less
+  <span class="muted">    ├──</span> docs.less
+  <span class="muted">    ├──</span> variables.less
+  <span class="muted">    ├──</span> flat-ui.less
+  <span class="muted">    ├──</span> mixins.less
+  <span class="muted">    ├──</span> spaces.less
+  <span class="muted">    └──</span> modules/
+</pre>
+          </p>
+
+          <p>
+            Let's go through this list:
+          </p>
+
+          <p>
+            <strong>bootstrap/</strong> &mdash; as you can guess this is the folder where all the original
+            Bootstrap files are located (untouched). Before using our theme, please make sure you didn't modify
+            anything in Bootstrap that can cause compatibility issues: paddings, margins, etc. <br/>
+            <em class="text-info">Note</em>: you can safely modify <code>variables.less</code>.
+          </p>
+
+          <p>
+            <strong>css/</strong> &mdash; the compiled Flat UI CSS. If you like everything and you don't want
+            to change the look of our components, it is better to use the CSS version. This is the easiest
+            way to start using Flat UI.
+          </p>
+
+          <p>
+            <strong>fonts/</strong> &mdash; yes, this is an icon font. When integrating this into your project, make sure you
+            copy all the font files correctly. You might want to change/add some glyphs. If so, open
+            <a href="http://icomoon.io/app">IcoMoon</a> and import <code>icomoon-session.json</code>
+            there to make all glyhps editable. You can also
+            <a href="http://screencast.com/t/JMs4cYHn" target="_blank">watch this video screencast</a>
+            on how to add your custom glyphs.
+          </p>
+
+          <p>
+            <img src="https://raw.github.com/designmodo/Flat-UI-Pro-Support/master/images/ico-moon.png" alt="" />
+          </p>
+
+          <p>
+            <strong>images/</strong> &mdash; unfortunately we have to use them in few cases, where we cannot just use glyphs.
+          </p>
+
+          <p>
+            <strong>js/</strong> &mdash; we have tried hard to make all our components look true Flat. In order to do
+            that we have used some JS plugins. Most of them are well known, while some of them are not. The most JS-ified components are the form components: checkboxes, radios, switches, selects, since it is not currently possible
+            to style them identically in all browsers. Look at <code>application.js</code> for integration
+            examples.
+          </p>
+
+          <p>
+            <strong>less/</strong> &mdash; is where all our stylesheets are located (not preprocessed).
+          </p>
+
+          <ul>
+            <li>
+              <code>docs.less</code> where all our stylesheets for documentation.
+            </li>
+            <li>
+              <code>variables.less</code> is where all the variables are.
+            </li>
+            <li>
+              <code>flat-ui.less</code> links everything into one single bundle.
+            </li>            
+            <li>
+              <code>mixins.less</code> helps automate things. Feel free to add your own here.
+            </li>            
+            <li>
+              <code>modules/</code> is where all the components are. If you want to add your own, create
+              module-name.less files here. Name them as a class name if possible.
+            </li>
+            <li>
+              <code>modules/glypicons.less</code> makes all icon glyphs work. Converted by
+              <a href="http://icomoon.io">IcoMoon</a>.
+            </li>
+            <li>
+              <code>modules/local-fonts.less</code> is where all custom fonts are.
+            </li>
+            <li>
+              <code>modules/scaffolding.less</code> is where you can find some basic styles for the body, the anchors and other elements.
+            </li>            
+          </ul>
+        </div>
+      </div><!-- /.demo-row -->
+
+      <div class="demo-row">
+        <div class="demo-title">
+          <h3>新组件</h3>
+        </div>
+
+        <div class="demo-content demo-content-article">
+          <ul>
+            <li>
+              <code>checkbox-and-radio.less</code> Custom checkboxes and radios.
+            </li>
+            <li>
+              <code>select.less</code> Custom selects.
+            </li>
+            <li>
+              <code>switch.less</code> Custom switch.
+            </li>
+            <li>
+              <code>tagsinput.less</code> Tags input field.
+            </li>
+            <li>
+              <code>slider.less</code> Range slider.
+            </li>
+            <li>
+	            <code>input-icons.less</code> Icons for text-based form fields.
+            </li>
+          </ul>
+        </div>
+      </div><!-- /.demo-row -->
+
+      <div class="demo-row">
+        <div class="demo-title">
+          <h3>重新设计的组件</h3>
+        </div>
+
+        <div class="demo-content demo-content-article">
+          <p><a href="components.html">Components documentation</a>.</p>
+          <ul>
+            <li><code>buttons.less</code></li>
+            <li><code>caret.less</code></li>
+            <li><code>dropdown.less</code></li>
+            <li><code>forms.less.less</code></li>
+            <li><code>navbar.less</code></li>
+            <li><code>pager.less</code></li>
+            <li><code>pagination.less</code></li>
+            <li><code>progress-bars.less</code></li>
+            <li><code>tooltip.less</code></li>
+            <li><code>type.less</code></li>
+          </ul>
+        </div>
+      </div><!-- /.demo-row -->
+
+    </div><!-- /.container -->
+  </body>
+</html>
