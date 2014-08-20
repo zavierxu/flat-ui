@@ -8,6 +8,7 @@ Flat UI Free 是一套精美的扁平风格 UI 工具包，基于 Twitter Bootst
 
 + [FF0000TeAm](http://www.ff0000.cc)
 + [HackerSoul](http://www.hackersoul.com)
++ [@weibo](http://weibo.com/ff0000team)
 
 Flat UI Free 2.1.3
 =======
